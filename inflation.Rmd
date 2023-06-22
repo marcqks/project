@@ -76,5 +76,19 @@ usethis::use_git_config(
 usethis::use_git()
 ```
 
+```{r}
+usethis::create_github_token(description = "Token for Repro Workshop 2023 Test")
+```
 
-
+```{r}
+gitcreds::gitcreds_set() 
+```
+```{r}
+usethis::use_github()
+```
+```{r}
+repro::automate()
+```
+```{r}
+repro::use_gha_docker()
+```
